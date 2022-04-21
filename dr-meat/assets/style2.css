@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); 
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+a{
+    color: #000;
+}
+h2{
+    font-family: 'EB Garamond', serif;
+}
+.content_wrapper{
+    box-sizing: border-box;
+    width: fit-content;
+    /* background-color:#00000050 ; */
+    padding: 30px;
+}
+.content_wrapper_2{
+    display: none;
+}
+.banner-para{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: bolder !important;
+    font-size: max(1vw,18px);
+    max-width: 600px;
+}
+.banner-para2{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: bolder !important;
+    font-size: max(1vw,18px);
+}
+.crow_1{
+    color: #fff;
+    text-align: left;
+    height: 90vh;
+    background-size: contain;
+    
+}
+.crow_1wrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.banner-image{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+    height: inherit;
+    object-fit: cover;
+}
+
+.banner-image-2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: -2;
+    height: inherit;
+    object-fit: cover;
+}
+
+.para-parent{
+    display: flex;
+    align-items: center;
+}
+.crow_para{
+    font-size: max(18px,1vw);
+    padding: 0 20px;
+}
+
+.crow_2,.crow_3{
+    margin: 20px 0;
+}
+.crow-img{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+.crow-img img{
+    max-width: 83%;
+}
+.learn_more_btn{
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.learn_more_btn span {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #C54633; 
+    border-radius: 50%;
+    line-height: 3;
+    margin-left: 20px;
+    padding: 5px;
+}
+.learn_more_btn span svg{
+    width: 30px;
+    height: 30px;
+    transform: translate(-18px,-2px);
+    transition: .3s ease-in-out;
+}
+.learn_more_btn:hover span svg{
+    transform: translate(0px,-2px);
+}
+
+.accordion-button{
+    font-size: 1.1rem;
+}
+.accordion-item {
+    border:  solid rgba(0,0,0,.125);
+    border-width: 0px 0px 1px 0px;
+    margin: 10px 0;
+}
+.gap{
+    margin-top: 50px;
+}
+.accordion-button:not(.collapsed) {
+    color: #C54633;
+    background-color: #C5463320;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(-180deg);
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: rgba(197, 70, 51, 0.125);
+    outline: 0px;
+    box-shadow: none;
+}
+footer{
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+
+ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+ul li a:hover{   
+    color: #C54633;
+}
+.icon{
+    display: inline;
+   width: 40px;
+   height: 40px;
+   margin: 5px;
+}
+
+.icon:hover{
+    color: #C54633;
+}
+.icon svg{
+    width: 16px;
+    height: 18px;
+}
+
+@media only screen and (max-width: 991px) {
+    .for-reverse{
+        flex-direction: column-reverse !important;
+    }
+    .content_wrapper{
+        display: none;
+    }
+    .crow_1wrapper{      
+        align-items: flex-start;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .banner-para{
+        font-size: 17px;
+    }
+    .crow_1{
+        height: 50vh;
+        background: none;  
+    }
+    .d-flex{
+        justify-content: center;
+    }
+    .content_wrapper_2{
+        display: block;
+    }
+}
+@media only screen and (max-width: 500px){
+    .crow_1{
+        height: 50vh;
+    }
+} 
