@@ -76,6 +76,8 @@ h2{
 }
 .crow-img{
     padding: 30px;
+    display: flex;
+    justify-content: center;
 }
 .crow-img img{
     max-width: 93%;
