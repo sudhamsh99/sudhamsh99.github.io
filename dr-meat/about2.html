@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/style2.css">
 </head>
 <body>
-    <div class="crow_1 crow_1wrapper">
+    <div class="crow_1 crow_1wrapper" id="crow_1">
         <video class="banner-image" src="assets/images/desktop.mp4" muted loop autoplay></video>
         <video class="banner-image2" src="assets/images/mobile.mp4" muted loop autoplay></video>
         <!-- <img class="banner-image" src="assets/images/desktop2.jpeg" alt="" srcset=""> -->
@@ -25,7 +25,7 @@
                         years of expertise, R&amp;D and innovation in poultry farming.
                         
                     </p>
-                    <br><a href="#scroll" onclick="myFunction()" class="banner-learnmore">Learn More</a>
+                    <br><a  onclick="myFunction()" class="banner-learnmore">Learn More</a>
                 </div>
             </div>
         </div>
@@ -40,18 +40,19 @@
                         years of expertise, R&amp;D and innovation in poultry farming.
                         
                     </p>
-                    <br><a href="#scroll" onclick="myFunction()" class="banner-learnmore">Learn More</a>
+                    <br><a onclick="myFunction()" class="banner-learnmore">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
+    <div id="for-scroll-offset"></div>
     <div class="gap"></div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12" id="scroll">
+            <div class="col-lg-12" id="scroll" style="display: none;">
                 <p>The team at Dr. Meat works with veterinarians and supply chain experts to ensure farm freshness. Our founders want to empower you with the information that other e-retailers won’t when you buy meat online. We can do so as we own the process of raising the bird to delivery. Apart from the nutrition of the chicken raised on the farm, we monitor their health and oversee techniques of cooling, storing, and packaging until it reaches your doorstep during online chicken delivery. Also, we give you a freshness certificate with every purchase. 
                 </p>
-                <a href="#scroll" onclick="myFunction()" class="banner-learnmore" style="border-color:#C54633">Close</a>
+                <a onclick="myFunction()" class="banner-learnmore" style="border-color:#C54633">Close</a>
             </div>
         </div>
     </div>
@@ -332,11 +333,15 @@
 
     <script>
         function myFunction() {
+            const element = document.getElementById("for-scroll-offset");
+            const element2 = document.getElementById("crow_1");
             var x = document.getElementById("scroll");
             if (x.style.display === "none") {
                 x.style.display = "block";
+                element.scrollIntoView({ behavior: 'smooth'});
             } else {
                 x.style.display = "none";
+                element2.scrollIntoView({ behavior: 'smooth'});
             }
         }
     </script>

@@ -324,9 +324,6 @@ ul li a:hover{
     transform: translate(2px,-15px);
 }
 
-#scroll{
-    display: none;
-}
 #scroll p{
     font-size: 20px;
 }
