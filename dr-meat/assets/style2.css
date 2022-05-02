@@ -53,10 +53,7 @@ h1,.crow_heading{
 h2{
     font-family: 'Libre Baskerville';
 }
-.content_wrapper{
-    box-sizing: border-box;
-    padding: 30px;
-}
+
 .content_wrapper_2{
     display: none;
 }
@@ -78,21 +75,25 @@ h2{
     text-align: left;
     position: relative;
 }
-.crow_1wrapper{
-    display: flex;
-    align-items: center;
-    height: 100vh;
-}
-.banner-image{
+.content_wrapper{
+    box-sizing: border-box;
+    padding: 30px;
     position: absolute;
-    top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
-    z-index: -1;
-    height: inherit;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.crow_1wrapper{
+    
+    position: relative;
+    
+}
+.banner-image{
     width: 100%;
-    object-fit:cover;
+    margin-top: -90px;
 }
 
 .banner-image2{
