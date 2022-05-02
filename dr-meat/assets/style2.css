@@ -76,7 +76,6 @@ h2{
 .crow_1{
     color: #fff;
     text-align: left;
-    height: 90vh;
     position: relative;
 }
 .crow_1wrapper{
@@ -169,7 +168,7 @@ h2{
 
 .bnn_heading{
     color: #000;
-    font-size: max(2vw,30px);
+    font-size: max(2vw,42px);
     text-transform: uppercase;
     text-shadow: rgb(0 0 0 / 50%) 2px 2px 6px;
     font-weight: bolder;
