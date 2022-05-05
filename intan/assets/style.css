@@ -1,0 +1,447 @@
+/* @import url('http://fonts.cdnfonts.com/css/cocogoose'); */
+@font-face {
+    font-family:  'COCOGOOSE', sans-serif;
+    src:local("assets/fonts/cocogoose-light.ttf");
+}
+@font-face {font-family: "Louis George Cafe"; src: url("//db.onlinewebfonts.com/t/a617b62cd8089465865a37c676da00e2.eot"); src: url("//db.onlinewebfonts.com/t/a617b62cd8089465865a37c676da00e2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a617b62cd8089465865a37c676da00e2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a617b62cd8089465865a37c676da00e2.woff") format("woff"), url("//db.onlinewebfonts.com/t/a617b62cd8089465865a37c676da00e2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a617b62cd8089465865a37c676da00e2.svg#Louis George Cafe") format("svg"); }
+
+
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Louis George Cafe"
+}
+.logo_wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.logo_wrapper img{
+	max-width: 200px;
+}
+
+.navbar_mainwrapper{
+	border-top: 1px solid #302D64;
+	border-bottom: 1px solid #302D64;
+}
+.navbar-nav{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	
+}
+.nav-link{
+	color: #ff6600 !important;
+	font-size: 20px;
+	font-weight: bold;
+}
+.heading_wrapper{
+	color: #302D64;
+	text-align: center;
+	font-family: 'COCOGOOSE', sans-serif;
+}
+video{
+	width: 100%;
+}
+.all_products_btn{
+	color: #fff;
+	text-decoration: none;
+	background-color: #302D64;
+	padding:12px 30px;
+	font-size: 16px;
+	border-radius: 30px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	border: 1px solid #302D64;
+}
+.all_products_btn:hover{
+	background-color: #fff;
+	color: #302D64;
+	border: 1px solid #302D64;
+}
+.des-para p{
+	font-size: 20px;
+	text-align: center;
+}
+footer{
+	background-color: #302D64;
+	color: #fff;
+}
+footer h4{
+	font-size: 25px;
+	font-weight: bolder;
+	padding-bottom: 20px;
+}
+.footer1 p{
+	font-weight: lighter;
+	font-size: 15px;
+}
+.footer2 a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	line-height: 1.8;
+	transition: transform .3s ease-in-out;
+}
+.footer2 a:hover{
+	transform: translateX(5px);
+	color: #fff;
+	width: fit-content;
+}
+.footer3 a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	line-height: 1.8;
+	transition: transform .3s ease-in-out;
+}
+.footer3 a:hover{
+	transform: translateX(5px);
+	color: #fff;
+	width: fit-content;
+}
+
+.testimonial{
+	position: relative;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 35px;
+}
+
+
+.testimonial::before{
+	content:url("images/testi9.png");
+	position: absolute;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	top: 0;
+}
+.testimonial::after{
+	content:url("images/testi10.png");
+	position: absolute;
+	height: 100%;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+.testimonial_wrapper{
+	position: relative;
+}
+.product_wrapper{
+	position: relative;
+}
+
+
+
+
+
+
+
+@-webkit-keyframes no-transform {
+	100% {
+	  transform: none;
+	}
+  }
+  
+  @keyframes no-transform {
+	100% {
+	  transform: none;
+	}
+  }
+  .scrollbox {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	overflow: hidden;
+  }
+  .scrollbox--primary {
+	background-color: #fff;
+	color: #fff;
+  }
+  .scrollbox--secondary {
+	background-color: #fff;
+	color: #fff;
+	-webkit-animation: no-transform 5s linear infinite;
+			animation: no-transform 5s linear infinite;
+  }
+  .scrollbox--reverse .scrollbox__item {
+	animation-direction: reverse;
+  }
+  .scrollbox:hover .scrollbox__item {
+	-webkit-animation-play-state: paused;
+			animation-play-state: paused;
+  }
+  .scrollbox__item {
+	background-color: #fff;
+	margin-left: 15px;
+	color: #fff;
+	font-family: 'COCOGOOSE', sans-serif;
+	text-shadow: -2px 0 1px #ff6600, 0 2px 1px #ff6600, 2px 0 1px #ff6600, 0 -2px 1px #ff6600;
+	font-weight: lighter;
+	flex: 1 0 auto;
+	text-transform: uppercase;
+	/* font-size: clamp(3rem, 4vw, 7rem); */
+	font-size: clamp(3rem, 3.3vw, 7rem);
+	transform: translateX(-100%);
+	-webkit-animation: no-transform 15s linear infinite;
+			animation: no-transform 15s linear infinite;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service
+{
+  margin: 8px;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 100%px;
+  height: 300px;
+  border-radius: 10px;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Louis George Cafe"
+}
+
+.flip-box-front {
+  background-color: #fff;
+  color: black;
+  border-radius: 30px;
+  border: 1px solid #FF9934;
+}
+
+
+
+.flip-box-back {
+  background-color: #302D64;
+  color: #fff;
+  transform: rotateY(180deg);
+  border-radius: 30px;
+  padding: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.product-wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 40px;
+	border-radius: 15px;
+	margin: 10px;
+}
+.product-wrapper img{
+	max-width: 150px;
+}
+.product-title{
+	color: #302D64;
+	margin-top: 10px;
+}
+.product-description{
+	color: #000;
+	text-align: center;
+}
+
+.product-wrapper:hover{
+	
+	-webkit-box-shadow: -1px -1px 15px -2px rgba(0,0,0,0.31);
+-moz-box-shadow: -1px -1px 15px -2px rgba(0,0,0,0.31);
+box-shadow: -1px -1px 15px -2px rgba(0,0,0,0.31);
+}
+.swiper-button-next, .swiper-button-prev{
+	color: #302D64;
+	transform: scale(1.5);
+}
+.swiper-pagination-bullet-active{
+	background-color: #302D64;
+}
+.testimonial{
+	text-align: center;
+	width: 100%;
+}
+
+
+
+
+
+.changing-text {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: #000;
+	
+  }
+
+  .text-wrap{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+.frame-wrapper{
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.frame-wrapper img{
+	max-width: 70%;
+}
+
+  .random-word {
+	display: inline-block;
+	text-transform: uppercase;
+	color: #302D64;
+	letter-spacing: 3px;
+	width: auto;
+	animation: slidedown 4s infinite;
+	-webkit-animation: slidedown 4s infinite;
+	-moz-animation: slidedown 4s infinite;
+  }
+  
+  @keyframes slidedown {
+	0% {
+	  opacity: 50;
+	}
+	
+	5% {
+	  opacity: 0;
+	  transform: translateY(0.5em);
+	}
+	
+	7% {
+	  transform: translateY(-1em);
+	}
+	
+	10% {
+	  opacity: 0;
+	}
+	
+	20% {
+	  transform: translateY(0);
+	  opacity: 100;
+	}
+  }
+
+
+
+
+  .typing{
+	font-size: 24px;
+	position: relative;
+	max-width: 25ch;
+	color: #302D64;
+	margin-left: 100px;
+  }
+  .typing::after{
+	content: "";
+	position: absolute;
+	height: 30px;
+	width: 2px;
+	background-color: #302D64;
+	color: #302D64;
+	padding: 1px;
+	animation: blink 700ms infinite ease;
+  }
+  @keyframes blink {
+	0% {
+	  opacity: 0;
+	  
+	}
+	50% {
+	  opacity: 1;
+		
+	}
+	100% {
+	  opacity: 0;
+		
+	}
+  }
+.testimonial2{
+	border: 2px solid #302D64;
+	padding: 30px;
+	position: relative;
+	height: 300px;
+	width: 85%;
+	color: #302D64;
+}
+.testimonial2 img{
+	position: absolute;
+	right: 0;
+	top: 50px;
+	border-radius: 50%;
+	width: 130px;
+	transform: translateX(80px);
+	z-index: 999;
+	display: inline-block;
+}
