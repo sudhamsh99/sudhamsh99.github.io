@@ -383,7 +383,7 @@ ul li a:hover{
     .crow_1wrapper{      
         align-items: flex-start;
         text-align: center;
-        margin-top: 100px;
+        margin-top: 75px;
         
     }
     .banner-para{
@@ -412,7 +412,7 @@ ul li a:hover{
         padding: 0 10px;
         left: 0;
         right: 0;
-        margin-top: 100px;
+        margin-top: 75px;
     }
     .bnn_heading{
         font-size:25px;
@@ -429,6 +429,9 @@ ul li a:hover{
     }
     .navbar-brand{
         align-self: flex-start;
+    }
+    .navbar-brand img{
+        max-width: 80px;
     }
 }
 @media only screen and (max-width: 500px){
