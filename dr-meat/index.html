@@ -4,41 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Meat is an online chicken delivery platform based in Bengaluru that
+    serves from farm to home in 60 minutes">
     <title>About US</title>
     <link rel="icon" type="image/x-icon" href="assets/images/fav-icon.jpeg">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <div class="crow_1 crow_1wrapper">
-        <img class="banner-image" src="assets/images/desktop2.jpeg" alt="">
-        <img class="banner-image-2" src="assets/images/mobile2.jpeg" alt="">
-        <div class="container ">
+    <div id="navup" style="transform: translateY(-100px);"></div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="" srcset=""></a>
+            <div class="burger-wrrapper">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link"  href="/">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://drmeatshop.com/">Shop Now</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </nav>
+    <div class="crow_1 crow_1wrapper" id="crow_1">
+        <video class="banner-image" src="assets/images/desktop.mp4" muted loop autoplay></video>
+        <video class="banner-image2" src="assets/images/mobile.mp4" muted loop autoplay></video>
+        <!-- <img class="banner-image" src="assets/images/desktop2.jpeg" alt="" srcset=""> -->
+        <div class="container content_wrapper">
             <div class="row d-flex">
-                <div class="col-lg-8">
-                    <h2 style="color: #c54633;font-size: max(3vw,30px);text-transform: uppercase;">Your Health & Safety <br>is our Priority</h2>
-                    <p class="banner-para">We are farmers on a mission. To give you back your right to know everything about the meat you consume. To tell you things about your chicken that your current retailer won't.
+                <div class="col-lg-12 ">
+                    <h1 class="bnn_heading">Dr. Meat - Great Meat, Nothing Else</h1>
+                    <p class="banner-para pt-2">Dr. Meat is helmed by a team passionate about farming and bringing the best possible meat to
+                        you from their farms when you order fresh chicken online. Our process is driven by over 30
+                        years of expertise, R&amp;D and innovation in poultry farming.
                         
                     </p>
-                    <p class="banner-para">From how your chicken was raised, to what it was fed, to what quality of water it drank, to how fresh it actually is. So that you can take an informed decision, and ensure that the chicken your family eats is safe, healthy, genuinely fresh, and tasty.
-                        
-                    </p>
+                    <br><a  onclick="myFunction()" class="banner-learnmore">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
+    <div class="content_wrapper_2 pt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 mt-2">
+                    <h1 class="bnn_heading">Dr. Meat - Ensuring everyday that you get Great Meat, Nothing Else</h1>
+                    <p class="banner-para pt-2">Dr. Meat is helmed by a team passionate about farming and bringing the best possible meat to
+                        you from their farms when you order fresh chicken online. Our process is driven by over 30
+                        years of expertise, R&amp;D and innovation in poultry farming.
+                        
+                    </p>
+                    <br><a onclick="myFunction()" class="banner-learnmore">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="for-scroll-offset" style="transform: translateY(-100px);"></div>
     <div class="gap"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" id="scroll" style="display: none;">
+                <p>The team at Dr. Meat works with veterinarians and supply chain experts to ensure farm freshness. Our founders want to empower you with the information that other e-retailers won’t when you buy meat online. We can do so as we own the process of raising the bird to delivery. Apart from the nutrition of the chicken raised on the farm, we monitor their health and oversee techniques of cooling, storing, and packaging until it reaches your doorstep during online chicken delivery. Also, we give you a freshness certificate with every purchase. 
+                </p>
+                <br><a onclick="myFunction()" class="banner-learnmore" style="border-color:#C54633;padding: 7px;">Close</a>
+            </div>
+        </div>
+    </div>
     <div class="crow_2">
         <div class="container ">
             <div class="row for-flex">
                 <div class="col-lg-6">
-                    <div class="crow-img"><img src="assets/images/crow-2-img.jpg" alt="" srcset=""></div>
+                    <div class="crow-img"><img src="assets/images/crow-4.jpg" alt="" srcset=""></div>
                 </div>
                 <div class="col-lg-6 para-parent">
-                    <p class="crow_para">
-                        Dr. Meat is committed to Transparent Farming, and its chicken are fed a balanced, nutritious, vet-approved diet, which contains prebiotics and probiotics, but never growth hormones. So, either find out what your chicken supplier is feeding their chicken, or order from Dr. Meat. Ensure a healthy, clean nutrition for your family. 
-                        <br><a class="learn_more_btn" href="#faq" rel="noopener noreferrer">Learn More<span><svg focusable="false" image-rendering="auto" baseProfile="basic" version="1.1" preserveAspectRatio="xMidYMid meet" viewBox="0 0 62 35"><title>Arrow Icon</title><rect x="0" y="14.7" width="55.2" height="4.55"></rect><g transform="translate(40.9 0)"><path stroke="none" d="M.35 3L14.3 17.2 0 31.25 3.35 34.25 20.85 17.15 3.5 0 .35 3Z"></path></g></svg></span></a>
-                    </p>
+                    
+                    <div>
+                        <input type="checkbox" class="read-more-state jcf-hidden" id="following-content">
+                        <h3 class="crow_heading">We monitor the feed and tell you all about it</h3>
+                        <p class="read-more-wrap"> The team at Dr. Meat works with recipes from nutritionists such that the birds feed on organic
+                            grains free of preservatives, hormones, steroids and antibiotics. And we tell you exactly what we
+                            feed them in keeping with the ideals of Transparent Farming when you order fresh chicken
+                            online.</p>
+                        <!-- read more goes here -->
+                        <p class="read-more-target">The feed chosen ensures optimal nutrition for you with better meat: fat ratio as it includes maize, corn, soy, rice, and trace minerals that pass stringent quality tests. The maize we offer our birds is ethically sourced, and at times supplements like prebiotics and probiotics are provided when needed to ensure better health for the chicken. When you buy chicken online with us, we want you to know what the chicken eats because it affects your health too. So we monitor every step of the process to arm you with the information. We even adhere to WHO standards.
+
+                        </p>
+                        <label for="following-content" class="read-more-trigger"><span><svg focusable="false" image-rendering="auto" baseProfile="basic" version="1.1" preserveAspectRatio="xMidYMid meet" viewBox="0 0 62 35"><title>Arrow Icon</title><rect x="0" y="14.7" width="55.2" height="4.55"></rect><g transform="translate(40.9 0)"><path stroke="none" d="M.35 3L14.3 17.2 0 31.25 3.35 34.25 20.85 17.15 3.5 0 .35 3Z"></path></g></svg></span></label>
+                    </div>
                      
                 </div>
             </div>
@@ -48,14 +110,21 @@
         <div class="container">
             <div class="row for-reverse">
                 <div class="col-lg-6 para-parent">
-                    <p class="crow_para ">
-                        Dr. Meat is committed to Transparent Farming, and its chicken are given clean water that’s tested every day. So, either find out what quality of water your chicken supplier is giving to the chicken, or order from Dr. Meat. Feed your family chicken that is 100% disease-free.
-                        <br><a class="learn_more_btn" href="#faq" rel="noopener noreferrer">Learn More<span><svg focusable="false" image-rendering="auto" baseProfile="basic" version="1.1" preserveAspectRatio="xMidYMid meet" viewBox="0 0 62 35"><title>Arrow Icon</title><rect x="0" y="14.7" width="55.2" height="4.55"></rect><g transform="translate(40.9 0)"><path stroke="none" d="M.35 3L14.3 17.2 0 31.25 3.35 34.25 20.85 17.15 3.5 0 .35 3Z"></path></g></svg></span></a>
-                    </p>
+                    <div>
+                        <input type="checkbox" class="read-more-state2 jcf-hidden2" id="following-content2">
+                        <h3 class="crow_heading">We choose the best water and process for consistent meat</h3>
+                        <p class="read-more-wrap2">We choose the best approach, and water is one of them. We provide the bird with the cleanest water that we can safely drink. 
+                        </p>
+                        <!-- read more goes here -->
+                        <p class="read-more-target2">What sets us apart from other broiler meat e-retailers is that the water given to the birds is UV-purified, and it guarantees hygienic meat. Before online chicken delivery, the meat is cleaned and packed using specialized cooling techniques. The chilled water used in cleaning helps the meat retain moisture in the muscles making the meat juicier. Our meat is packed from the farms and delivered in 24 hours to you to retain freshness and ensure the birds go through the least amount of stress, making the meat you order online tender. Dr. Meat’s online chicken delivery happens across Bengaluru from farms close to the city. We make sure that the chicken is out of the farm and delivered to you within a few hours to keep it fresh.
+
+                        </p>
+                        <label for="following-content2" class="read-more-trigger2"><span><svg focusable="false" image-rendering="auto" baseProfile="basic" version="1.1" preserveAspectRatio="xMidYMid meet" viewBox="0 0 62 35"><title>Arrow Icon</title><rect x="0" y="14.7" width="55.2" height="4.55"></rect><g transform="translate(40.9 0)"><path stroke="none" d="M.35 3L14.3 17.2 0 31.25 3.35 34.25 20.85 17.15 3.5 0 .35 3Z"></path></g></svg></span></label>
+                    </div>
                     
                 </div>
                 <div class="col-lg-6">
-                    <div class="crow-img"><img src="assets/images/crow-3-img.jpg" alt="" srcset=""></div>
+                    <div class="crow-img"><video src="assets/images/water-chicken.mp4" autoplay muted loop></video></div>
                 </div>
             </div>
         </div>
@@ -63,20 +132,19 @@
     <div class="gap"></div>
     <div class="crow_4" id="faq">
         <div class="container">
-            <h3 style="color: #c54633;border-bottom: 2px dotted #000;width: fit-content;">Frequently Asked Questions</h3>
+            <h3 style="color: #c54633;border-bottom: 2px dotted #000;width: fit-content;font-family:  'Fjalla One', sans-serif;text-transform: uppercase;">Frequently Asked Questions</h3>
             <div class="gap"></div>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        1. Where are Dr. Meat’s farms located? And what type of chicken do you sell?
+                        1. What is Transparent farming?
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <p class="acc_para">
-                            We sell Broiler Meat, and our broiler farms are on the outskirts of Bangalore, to name a few.
-                            Doddabalapur and Tumkur
+                            Transparent Farming is the method we follow through which we tell our consumers all about where their meat comes from. We don’t hide any detail and tell them all about our farming practices. 
                         </p>                        
                     </div>
                   </div>
@@ -84,18 +152,13 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            2. How do we know if the chicken is fresh? and how do we ensure the freshness?
+                            2. Does that make the chicken one buys online from Dr. Meat more hygienic? How does it impact the consumer?
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <p class="acc_para">
-                                When you open our chicken box you will find no smell. Our chicken is not stored for long
-                                durations even in our storage facilities. Once the birds are dressed, we use a chilled water
-                                technique to cool the meat gradually. No preservatives or chemicals or any artificial
-                                ingredient is added.
-                                While cooking, you will notice that the meat is not dry, which ensures the freshness of the
-                                meat.
+                                Safety measures are employed at every step, from the in-farm production process to supply and packaging. We prefer to control every process and let you know about it. Hence you can cook and serve our meat with complete peace of mind about the chicken they buy online.
                             </p>
                             
                         </div>
@@ -104,13 +167,14 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            3. What is transparent farming?
+                            3. What kind of chicken do we sell? What does our transparent farming process look like?
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <p class="acc_para">
-                                We showcase how your food is safely produced.
+                                Our USP is that we provide the best-possibly raised broiler chicken you can order online.
+                                We get the best feed for the chicken with the help of leading veterinary doctors and nutrition experts. Our raw materials have to pass a stringent quality test. Also, we test the feed and ingredients such that they don’t have any heavy metals, impurities and excess moisture that can impact the freshness of the meat.                                 
                             </p>
                         </div>
                     </div>
@@ -124,9 +188,7 @@
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <p class="acc_para">
-                                Since all the processes are controlled, nothing gets into the chicken which is not approved.
-                                We maintain a certain fat to meat ratio to ensure the consumers get great meat and nothing
-                                else.                                
+                                Of course, with our process, everything is vetted and hygiene ensured.                             
                             </p>
                         </div>
                     </div>
@@ -134,15 +196,13 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFive">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            5. Is Transparent farming different from organic farming?
+                            5. Is Transparent Farming similar to organic farming?
                         </button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <p class="acc_para">
-                                Transparent farming is different from organic farming. Our chicken is fed with superior quality feed and water. We ensure that our meat is
-                                   <br> a. Residue-Free
-                                   <br> b. Adhered to WHO Standards of food safety                              
+                                Not really! While the latter applies more to a certification method followed in crops, transparent farming is more about accountability in production and empowering consumers with the know-how.                         
                             </p>
                         </div>
                     </div>
@@ -150,16 +210,13 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingSix">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            6. What does the chicken eat?
+                            6. Is the fresh chicken sold online by Dr. meat antibiotic-free? 
                         </button>
                     </h2>
                     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <p class="acc_para">
-                                Maize, Soya, Rice, Trace minerals (only organic RAW materiels are used as feed),
-                                Vitamins, Rb oil, enzymes, Maize is procured after it passes through a specific
-                                quality parameter, Certifications to show no ingredients carry heavy metals. 
-                                Testing the meat vs preventing the pollutants                    
+                                Yes, it is and we adhere to European Union standards. We prefer organic minerals as a supplement for a balanced diet for the birds. We also supplement their diet with prebiotics and probiotics throughout their lifecycle and avoid antibiotics.              
                             </p>
                         </div>
                     </div>
@@ -167,15 +224,13 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingSeven">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                            7. How is your feed different from others?
+                            7. How will you know the chicken you buy online is fresh?
                         </button>
                     </h2>
                     <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <p class="acc_para">
-                                We use probiotics and prebiotics to keep the birds
-                                healthy. There is no use of antibiotics. We use only organic minerals to assist
-                                the bird in its growth.
+                                Before you unbox the chicken you would notice that the date of manufacturing is of that day itself.  We cull at our farm and deliver on the same day. You would also not find any bad odour. Hence, you would notice the meat is cooked easily and isn’t dry. Our meat is dressed, cooled with chilled water technique gradually and packed without preservatives or chemicals. 
                             </p>
                         </div>
                     </div>
@@ -183,17 +238,13 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingEight">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                            8. Can every chicken be tested for antibiotics? 
+                            8. How should the consumer keep raw chicken overnight?
                         </button>
                     </h2>
                     <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <p class="acc_para">
-                                It takes 14 days to test meat for the presence of
-                                antibiotics. Since our meat is not frozen, we cannot hold the meat till the
-                                tests are out. We take responsibility as we own the process of growing the
-                                chicken. It&#39;s not about doing the test once, but each time.
-
+                                Store the uncooked chicken in its original sealed packaging, on the bottom shelf of your fridge. Please make sure the packaging is well-sealed and it is stored away from other food and cooked meats. Also, double-check that your fridge is set to a temperature of 0-5°C. This keeps your chicken – and all the food in your fridge – fresher for longer. In case the seal is broken, please wash the meat and store it in an airtight container same as above. 
                             </p>
                         </div>
                     </div>
@@ -201,14 +252,13 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingNine">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                            9. How do you guarantee freshness? 
+                            9. Why does Dr. Meat not sell mutton and seafood yet?
                         </button>
                     </h2>
                     <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <p class="acc_para">
-                                Freshness certificate with date of culling, and not just
-                                the packaging of meat and its portioning.
+                                Since we don't aggregate food, we have decided to foray into this arena only once we are clear about the process of being transparent and come up with similar practices for mutton and seafood as we have for our chicken.
                             </p>
                         </div>
                     </div>
@@ -216,73 +266,22 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTen">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                            10. Is temperature the only measure of freshness? 
+                            10. How does Dr. Meat ensure only fresh meat reaches consumers when they buy chicken online? Where are Dr. Meat’s farms located?
                         </button>
                     </h2>
                     <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <p class="acc_para">
-                                a. Legacy helps maintain the process and improve
-                                skillset.<br> 
-                                b. When you open our chicken box you will find no smell.
-                                Our chicken is not stored for long durations even in our storage facilities.
-                                Our culled chicken is fresh and delivered on the same day. 
-                                c.While cooking, you will notice that the meat is not
-                                dry, which ensures the freshness of the meat. 
+                                We go to extra lengths to prevent long transportation hauls, or storage in the shop as that results in dryness contributing to chicken that isn’t fresh. Our farms are located in the same vicinity as the processing unit, hence we can maintain zero wait time for processing.  
+
+                               <br> Our farms are situated on the outskirts of Bengaluru – Doddabalapur and Tumkur.
+                                
 
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingEleven">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                            11. How should I keep raw chicken overnight? 
-                        </button>
-                    </h2>
-                    <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="acc_para">
-                                Store raw chicken in its original packaging, on the
-                                bottom shelf of your fridge. Just make sure the packaging is well-sealed and
-                                away from other foods and cooked meats. Double-check that your fridge is set to
-                                0-5°C. This keeps your chicken – and all the food in your fridge – fresher for
-                                longer.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwelve">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                            12. You can test a chicken on a few parameters when you receive it
-                        </button>
-                    </h2>
-                    <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="acc_para">
-                                a. Lot of factors are perceived to be taken care of if we maintain temperature( ideally 0-4)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThirteen">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-                            13. Why we don&#39;t have mutton and seafood yet
-                        </button>
-                    </h2>
-                    <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="acc_para">
-                                a. We don&#39;t aggregate food<br>
-                                b. We are in process of developing similar practices for
-                                mutton and seafood
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -343,7 +342,7 @@
                                 
                             </div>
                         </li>
-                        <li><a href="#">Copyright 2022 SUKOS FOODS PVT. LTD. All rights reserved.</a></li>
+                        <li><a href="#">Copyright <script>document.write(new Date().getFullYear())</script> SUKOS FOODS PVT. LTD. All rights reserved.</a></li>
                     </ul>
                 </div>
             </div>
@@ -356,7 +355,20 @@
 
 
 
-
+    <script>
+        function myFunction() {
+            const element = document.getElementById("for-scroll-offset");
+            const element2 = document.getElementById("navup");
+            var x = document.getElementById("scroll");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                element.scrollIntoView({ behavior: 'smooth'});
+            } else {
+                x.style.display = "none";
+                element2.scrollIntoView({ behavior: 'smooth'});
+            }
+        }
+    </script>
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,74 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); 
+/* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');  */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+
+
+
+
+
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
 }
+nav{
+    background-color: #C54633;
+    z-index: 999;
+    box-shadow: 0px 0px 10px gray;
+}
+.navbar-toggler{
+    background-color: #EEC8C2;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url(/assets/images/dr.svg);
+    color: rgb(255, 255, 255);
+    background-color: #EEC8C2;
+    padding: 0;
+}
+.navbar-light .navbar-toggler{
+    border-color: none;
+}
+.nav-link{
+    color: #fff !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 0 10px;
+}
+@media only screen and (max-width:) {
+    
+}
+
 img{
     max-width: 100%;
 }
 a{
     color: #000;
 }
-h2{
-    font-family: 'EB Garamond', serif;
+h1,.crow_heading{
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
 }
-.content_wraper{
-    box-sizing: border-box;
-    width: fit-content;
+h2{
+    font-family: 'Libre Baskerville';
+}
+.content_wrapper_2{
+    display: none;
 }
 .banner-para{
-    font-family: 'Poppins', sans-serif;
+    color: #000;
+    text-shadow: rgb(0 0 0 / 50%) 2px 2px 6px;;
+    font-weight: bold !important;
+    font-size: max(0.9vw,18px);
+    max-width: 600px;
+}
+.banner-para2{
+   
     color: #000;
     font-weight: bolder !important;
-    font-size: max(1vw,18px);
-    max-width: 600px;
+    font-size: max(1vw,16px);
 }
 .crow_1{
     color: #fff;
     text-align: left;
-    height: 70vh;
-    background-size: contain;
-}
-.crow_1wrapper{
-    display: flex;
-    align-items: center;
     position: relative;
 }
+.content_wrapper{
+    box-sizing: border-box;
+    padding: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.crow_1wrapper{
+    
+    position: relative;
+    
+}
 .banner-image{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     width: 100%;
-    z-index: -1;
-    height: inherit;
-    object-fit: cover;
+    margin-top: -90px;
 }
 
-.banner-image-2{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.banner-image2{
     width: 100%;
-    z-index: -2;
-    height: inherit;
     object-fit: cover;
+    display: none;
 }
 
+.banner-learnmore{
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    padding: 12px;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.banner-learnmore:hover{
+    border: 2px solid #000;
+    color: #000;
+}
 .para-parent{
     display: flex;
     align-items: center;
 }
 .crow_para{
     font-size: max(18px,1vw);
-    padding: 0 20px;
+    
 }
 
 .crow_2,.crow_3{
@@ -80,7 +147,10 @@ h2{
     justify-content: center;
 }
 .crow-img img{
-    max-width: 93%;
+    max-width: 83%;
+}
+.crow-img video{
+    max-width: 83%;
 }
 .learn_more_btn{
     text-transform: uppercase;
@@ -107,6 +177,13 @@ h2{
     transform: translate(0px,-2px);
 }
 
+.bnn_heading{
+    color: #000;
+    font-size: max(2vw,35px);
+    text-transform: uppercase;
+    text-shadow: rgb(0 0 0 / 50%) 2px 2px 6px;
+    font-weight: bolder;
+}
 .accordion-button{
     font-size: 1.1rem;
 }
@@ -168,31 +245,217 @@ ul li a:hover{
     height: 18px;
 }
 
+.read-more-state {
+    display: none;
+  }
+  
+  .read-more-wrap {
+    margin: 0;
+    font-size: max(18px,0.9vw);
+  }
+  
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: 0.25s ease;
+  }
+  
+  .read-more-state:checked ~ .read-more-target {
+    opacity: 1;
+    font-size: max(18px,0.9vw);
+    max-height: 999em;
+    margin-top: 10px;
+    
+  }
+  
+  .read-more-state ~ .read-more-trigger:before {
+    content: "LEARN MORE";
+    
+  }
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: "CLOSE";
+  }
+  
+  .read-more-trigger {
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    color: #000;
+    font-size:20px;
+    
+  }
+  .read-more-trigger span {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #C54633; 
+    border-radius: 50%;
+    line-height: 3;
+    margin-left: 20px;
+    display: inline-block;
+    transform: translateY(13px);
+}
+.read-more-trigger span svg{
+    width: 30px;
+    height: 30px;
+    transform: translate(-18px,-15px);
+    transition: .3s ease-in-out;
+}
+.read-more-trigger:hover span svg{
+    transform: translate(2px,-15px);
+}
+
+
+
+
+/* 2nd */
+.read-more-state2 {
+    display: none;
+  }
+  
+  .read-more-wrap2 {
+    margin: 0;
+    font-size: max(18px,0.9vw);
+  }
+  
+  .read-more-target2 {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: 0.25s ease;
+  }
+  
+  .read-more-state2:checked ~ .read-more-target2 {
+    opacity: 1;
+    font-size: max(18px,0.9vw);
+    max-height: 999em;
+    margin-top: 10px;
+    
+  }
+  
+  .read-more-state2 ~ .read-more-trigger2:before {
+    content: "LEARN MORE";
+    
+  }
+  
+  .read-more-state2:checked ~ .read-more-trigger2:before {
+    content: "CLOSE";
+  }
+  
+  .read-more-trigger2 {
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    color: #000;
+    font-size:20px;
+    
+  }
+  .read-more-trigger2 span {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #C54633; 
+    border-radius: 50%;
+    line-height: 3;
+    margin-left: 20px;
+    display: inline-block;
+    transform: translateY(13px);
+}
+.read-more-trigger2 span svg{
+    width: 30px;
+    height: 30px;
+    transform: translate(-18px,-15px);
+    transition: .3s ease-in-out;
+}
+.read-more-trigger2:hover span svg{
+    transform: translate(2px,-15px);
+}
+
+#scroll p{
+    font-size: 18px;
+}
 @media only screen and (max-width: 991px) {
     .for-reverse{
         flex-direction: column-reverse !important;
     }
-    .banner-image{
+    .content_wrapper{
         display: none;
     }
     .crow_1wrapper{      
         align-items: flex-start;
         text-align: center;
-        padding-top: 40px;
+        margin-top: 100px;
+        
     }
     .banner-para{
         font-size: 17px;
     }
-    .crow_1{
-        height: 80vh;
+    .crow_1{    
         background: none;  
+        height: fit-content;
     }
     .d-flex{
         justify-content: center;
     }
+    
+    .banner-image{
+        display:none;
+    }
+    .banner-image2{
+        object-fit: contain;
+        position: static;
+        display: block;
+    }
+    .content_wrapper_2{
+        display: block;
+        position: absolute;
+        top: 0;
+        padding: 0 10px;
+        left: 0;
+        right: 0;
+        margin-top: 100px;
+    }
+    .bnn_heading{
+        font-size:25px;
+        color: #000;
+    }
+    .content_wrapper_2 .banner-para{
+        font-size: 20px
+    }
+    .nav-link{
+        margin: 0;
+    }
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+        align-items: center;
+    }
+    .navbar-brand{
+        align-self: flex-start;
+    }
 }
 @media only screen and (max-width: 500px){
     .crow_1{
-        height: 100vh;
+        height: fit-content;
+    }
+    .content_wrapper_2{
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+    .content_wrapper_2 .banner-para{
+        font-size: 14px
+    }
+    .content_wrapper_2 .banner-learnmore{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .banner-learnmore{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .bnn_heading{
+        font-size: max(1vw,20px)
+    }
+    #scroll p{
+        font-size: 16px;
     }
 } 
