@@ -68,7 +68,6 @@ h2{
 }
 .banner-para{
     color: #000;
-    text-shadow: rgb(0 0 0 / 50%) 2px 2px 6px;;
     font-weight: bold !important;
     font-size: max(0.9vw,18px);
     max-width: 600px;
@@ -113,20 +112,21 @@ h2{
 
 .banner-learnmore{
     text-decoration: none;
-    background-color: #fff;
-    color: #000;
+    background-color: #C54633;
+    color: #fff;
     text-transform: uppercase;
     padding: 12px;
     font-weight: bold;
     transition: all .2s ease-in-out;
     box-sizing: border-box;
-    border: 2px solid #fff;
+    border: 2px solid #C54633;
     font-size: 20px;
     cursor: pointer;
+    border-radius: 8px;
 }
 .banner-learnmore:hover{
-    border: 2px solid #000;
-    color: #000;
+    border: 2px solid #fff;
+    color: #fff;
 }
 .para-parent{
     display: flex;
@@ -180,7 +180,6 @@ h2{
     color: #000;
     font-size: max(2vw,35px);
     text-transform: uppercase;
-    text-shadow: rgb(0 0 0 / 50%) 2px 2px 6px;
     font-weight: bolder;
 }
 .accordion-button{
