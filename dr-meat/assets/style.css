@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
 
 
 
@@ -16,6 +16,38 @@ body{
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
+}
+.band{
+    background-color: #F7EBEA;
+    width: 100%;
+   
+}
+.navbar{
+    padding-top: 0;
+}
+.band p{
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family:  'Maven Pro', sans-serif;;
+    line-height: 28px;
+    color: rgb(24, 33, 53);
+    letter-spacing: 1px;
+    text-align: right;
+    padding: 2px 0;
+}
+.band p .span1{
+    margin-left: 25px;
+}
+.band p span a{
+    text-decoration: none;
+}
+.band p span a:hover{
+    color: rgb(24, 33, 53) ;
+}
+
+.band p .span2{
+    margin-left: 10px;
 }
 nav{
     background-color: #C54633;
@@ -46,8 +78,11 @@ nav{
     font-size: 17px;
     margin: 0 10px;
 }
-@media only screen and (max-width:) {
-    
+@media only screen and (max-width:450px) {
+    .band p{
+        font-size: 10px;
+        padding: 1px 0;
+    }
 }
 
 img{
@@ -382,7 +417,7 @@ ul li a:hover{
     .crow_1wrapper{      
         align-items: flex-start;
         text-align: center;
-        margin-top: 75px;
+        margin-top: 95px;
         
     }
     .banner-para{
@@ -411,7 +446,7 @@ ul li a:hover{
         padding: 0 10px;
         left: 0;
         right: 0;
-        margin-top: 75px;
+        margin-top: 95px;
     }
     .bnn_heading{
         font-size:25px;
@@ -423,14 +458,14 @@ ul li a:hover{
     .nav-link{
         margin: 0;
     }
-    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
-        align-items: center;
-    }
     .navbar-brand{
         align-self: flex-start;
     }
     .navbar-brand img{
         max-width: 80px;
+    }
+    .for__center{
+        justify-content: center !important;
     }
 }
 @media only screen and (max-width: 500px){
