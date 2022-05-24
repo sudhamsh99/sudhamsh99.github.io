@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+img{ max-width:100%;}
+body{  font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;}
+body h5{ font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;}
+body h6{ font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;}
+p{ font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;}
+.header-bg{overflow:hidden; padding:15px 0; background-color:#777157;}
+.header-bg h1{ color:#fff; font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;font-weight:bold; font-size:25px;}
+.header-bg img{ }
+.pack_box1, .pack_box2, .pack_box3, .pack_box4, .pack_box5{
+	background:#fff; border:1px solid #dfdfdf; margin:15px 0;
+	box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+.pack-box{}
+.pack-box h5{ position:relative; padding:8px 50px 8px 10px; margin:0;}
+.pack-box h5 span{ position:absolute; right:10px;}
+.pack_box1 li span{ right:10px; position:absolute; top:2px;}
+.pack_box1 li span.list_num{ left:5px; top:5px; color:#f00;}
+.pack_box1 ul{ margin:0; padding:0; list-style-type:none;}
+.pack_box1 ul li{ padding:5px 35px 5px 30px; border-bottom:1px solid #ccc;font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif; position:relative;}
+.pack_box1 h5{ background:#8CC63E; padding:10px; color:#fff;}
+
+.pack_box2 h5{ background:#FF9900; padding:10px; color:#fff; margin:0;}
+.pack_box2 li span{ right:10px; position:absolute; top:2px;}
+.pack_box2 li span.list_num{ left:5px; top:5px; color:#f00;}
+.pack_box2 ul{ margin:0; padding:0; list-style-type:none;}
+.pack_box2 ul li{padding:5px 35px 5px 30px; border-bottom:1px solid #ccc;font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif; position:relative;}
+
+.pack_box3{ margin:150px 0 0 0;}
+.pack_box3 h5{ background:#33C6F4; padding:10px; color:#fff; margin:0;}
+.pack_box3 li span{ right:10px; position:absolute; top:2px;}
+.pack_box3 li span.list_num{ left:5px; top:5px; color:#f00;}
+.pack_box3 ul{ margin:0 0 30px 0; padding:0; list-style-type:none;}
+.pack_box3 > ul > li{padding:5px 35px 5px 20px; font-size:14px;font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif; position:relative;}
+.pack_box3 h6{ padding:0px 50px 0 10px;color:#4DB748; font-size:15px; position:relative;}
+.pack_box3 h6 span{
+	position:absolute; right:15px; top:0;
+}
+
+.pack_box4 h5{ background:#4DB748; padding:10px; color:#fff; margin:0;}
+.pack_box4 li span{ right:10px; position:absolute; top:2px;}
+.pack_box4 li span.list_num{ left:5px; top:5px; color:#f00;}
+.pack_box4 ul{ margin:0; padding:0; list-style-type:none;}
+.pack_box4 ul li{padding:5px 35px 5px 30px;font-size:14px;font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif; position:relative; border-top:1px solid #dfdfdf;}
+.pack_box4 h5{ color:#4DB748; font-size:18px;}
+.pack-bann img{ margin-top:-9px; }
+
+.footer-bg{ background:#FFFF00; padding:15px;}
+
+.back_btn{
+	position:fixed; right:15px; bottom:15px; z-index:5; background-color:#33C6F4; font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	border-radius:4px;
+	box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+.back_btn a{ color:#fff;}
+
+@media(max-width:760px){
+.pack_box3{ margin:0 0;}
+
+.header-bg h1{
+	margin:35px 0; color:#fff !important; font-weight:normal; font-size:20px;
+}
+}
+@media(min-width:760px){
+	.header-bg h1{
+	}
+}
